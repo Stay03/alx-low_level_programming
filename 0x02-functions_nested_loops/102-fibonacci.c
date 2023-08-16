@@ -7,20 +7,20 @@
  */
 int main(void)
 {
-    long int n1 = 1, n2 = 2, next;
-    int i;
+	long int n1 = 1, n2 = 2, next;
+	int i;
 
-    printf("%ld, %ld", n1, n2);
+	printf("%ld, %ld", n1, n2);
 
-    for (i = 3; i <= 50; i++)
-    {
-        next = n1 + n2;
-        printf(", %ld", next);
-        n1 = n2;
-        n2 = next;
-    }
+	for (i = 3; i <= 50; i++)
+	{
+		next = n1 + n2;
+		printf(", %ld", next);
+		n1 = n2;
+		n2 = next;
+	}
 
-    printf("\n");
+	printf("\n");
 
-    return (0);
+	return (0);
 }
