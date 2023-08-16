@@ -39,7 +39,7 @@ void print_fibonacci(void)
 		current = next;
 
 		count++;
-		if (count != 98)
+		if (count != 99)
 		{
 			putchar(',');
 			putchar(' ');
