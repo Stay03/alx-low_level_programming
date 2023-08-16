@@ -30,7 +30,7 @@ void print_fibonacci(void)
 	putchar('2');
 	putchar(',');
 
-	while (count < 98)
+	while (count <= 98)
 	{
 		next = prev + current;
 		printf(" %lu", next);
