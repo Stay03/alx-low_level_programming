@@ -9,7 +9,7 @@
 int _atoi(char *s)
 {
 	int sign = 1;
-	long int result = 0; /* Updated to long int */
+	int result = 0;
 	int i = 0;
 
 	while (s[i] != '\0')
@@ -25,5 +25,6 @@ int _atoi(char *s)
 		i++;
 	}
 
-	return ((int)(result * sign)); /* Convert back to int */
+	return (result * sign);
 }
+
