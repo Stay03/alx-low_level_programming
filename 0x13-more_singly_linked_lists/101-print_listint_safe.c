@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * _print_number - Prints an integer using only _putchar.
@@ -43,12 +44,12 @@ size_t print_listint_safe(const listint_t *head)
         }
     }
 
-   
+ 
     print_ptr = head;
     while (print_ptr)
     {
         _putchar('[');
-        _print_number((uintptr_t)print_ptr);
+        _print_number((unsigned long)print_ptr);
         _putchar(']');
         _putchar(' ');
         _print_number(print_ptr->n);
